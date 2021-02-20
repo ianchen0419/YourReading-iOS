@@ -1,0 +1,41 @@
+[
+    {
+        "id": "0fac7d8c-8e10-40a5-86f8-f5c96054524e",
+        "readStatus": "已閱讀",
+        "ISBN_13": "9784473043306",
+        "title": "マボロシの茶道具図鑑",
+        "authors": ["依田徹"],
+        "publishedDate": "2019-10",
+        "startRead": "2020-01-01",
+        "endRead": "2020-02-02",
+        "category": ["周董推薦"],
+        "description": "失われている、あるいは、所蔵者不明の名品など、もう「見られない」=「マボロシ」の茶道具をイラストを交え、図鑑風に紹介します。",
+        "thumbnail_url": "http://books.google.com/books/content?id=L9kbygEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    {
+        "id": "faae46c3-b985-47f7-beac-bcdf933a5131",
+        "readStatus": "正在閱讀",
+        "ISBN_13": "9784041090152",
+        "title": "青くて痛くて脆い",
+        "authors": ["住野よる"],
+        "publishedDate": "2020-06",
+        "startRead": "2020-01-01",
+        "endRead": "",
+        "category": ["小說"],
+        "description": "『君の膵臓をたべたい』著者が放つ、青春小説!",
+        "thumbnail_url": "http://books.google.com/books/content?id=MgSrzQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    },
+    {
+        "id": "0d556c43-122e-4b9a-942f-0609cd5ed8b6",
+        "readStatus": "未閱讀",
+        "ISBN_13": "9784800295354",
+        "title": "泣ける!ミステリー 父と子の物語",
+        "authors": ["冲方丁","岡崎琢磨","里見蘭","小路幸也","友清哲"],
+        "publishedDate": "2019-06-20",
+        "startRead": "",
+        "endRead": "",
+        "category": ["周董推薦","小說"],
+        "description": "人気作家が描き出す、五者五様の「父」の姿―船乗りの父、詐欺師の父、大学教授の父、そして...。「親の心子知らず」というが、子どもの目には見えない父親の本当の姿。その謎が明らかになったとき、あなたはきっと涙なしではいられない。すべての親子に贈る、魅力的な謎と愛すべき父に出会えるとっておきの短編集!",
+        "thumbnail_url": "http://books.google.com/books/content?id=3SzGxQEACAAJ&printsec=frontcover&img=1&zoom=5&source=gbs_api"
+    }
+]
