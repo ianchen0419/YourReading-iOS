@@ -14,6 +14,10 @@ struct StatusView: View {
     
     var body: some View {
         NavigationView {
+            
+//            HStack {
+//                Text("123")
+//            }
 
             List {
                 Section(header: Text("已閱讀清單")){

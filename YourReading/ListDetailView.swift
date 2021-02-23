@@ -9,33 +9,33 @@
 import SwiftUI
 
 
-
 struct ListDetailView: View {
     var item: CategoryItem
     
+    
     @State private var tempBooks=["マボロシの茶道具図鑑", "青くて痛くて脆い"]
+    @State private var showAddBook=false
     
     var body: some View {
         ZStack(alignment: .bottom) {
             List {
-                Section(header: Text("")){
+                Section {
                     
                     //TODO: 依照category name篩出符合的book title
                     ForEach(tempBooks, id: \.self){
-                        tempBooks in
-                        Text(tempBooks);
+                        book in
+                        Text(book);
                     }
                     .onDelete(perform: delete)
                 }
                 
-                Section(header: Text("")){
+                Section {
                     HStack {
-                        Spacer()
-                        Button(action: /*@START_MENU_TOKEN@*/{}/*@END_MENU_TOKEN@*/) {
-                            Text("刪除這個書單")
-                                .foregroundColor(Color.red)
+                        Button("刪除這個書單") {
+
                         }
-                        Spacer()
+                        .foregroundColor(Color.red)
+                        .frame(maxWidth: .infinity)
                     }
                 }
             }
@@ -46,7 +46,12 @@ struct ListDetailView: View {
             .navigationBarItems(trailing: EditButton())
             .listStyle(GroupedListStyle())
             
-            Button(action: {}) {
+            
+            NavigationLink(destination: ListDetailAddView(), isActive: $showAddBook){ EmptyView() }
+            
+            Button(action: {
+                self.showAddBook=true
+            }) {
                 HStack(alignment: .center) {
                     Image(systemName: "plus").foregroundColor(.white)
                     Text("添加書目")
@@ -59,6 +64,7 @@ struct ListDetailView: View {
             .cornerRadius(38.5)
             .padding()
             .shadow(color: Color.black.opacity(0.3),radius: 3,x: 3,y: 3)
+            
         }
     }
     

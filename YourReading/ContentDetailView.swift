@@ -69,23 +69,19 @@ struct ContentDetailView: View {
             }
             
             Section {
-                HStack {
-                    Button(action: {}) {
-                        Text("刪除")
-                        .foregroundColor(Color.red)
-                    }
-                    .frame(maxWidth: .infinity)
-//
-                    Button(action: {}) {
-                        Text("分享")
-                    }
-                    .frame(maxWidth: .infinity)
-                    
-//                    Button("分享") {
-//
-//                    }
-                    
+                Button("刪除") {
+                    self.showDeleteConfirm.toggle()
                 }
+                .frame(maxWidth: .infinity)
+                .foregroundColor(Color.red)
+                
+            }
+            
+            Section {
+                Button("分享") {
+
+                }
+                .frame(maxWidth: .infinity)
             }
         }
         .listStyle(GroupedListStyle())
@@ -95,11 +91,15 @@ struct ContentDetailView: View {
         )
         .alert(isPresented: $showDeleteConfirm) {
             Alert(
-                title: "123",
-                message: "123123123",
-                dismissButton: .default(Text("OK"))
+                title: Text("提示"),
+                message: Text("確定刪除這本書嗎"),
+                primaryButton: .cancel(Text("確認")) {
+                    print("Deleting...")
+                },
+                secondaryButton: .default(Text("取消"))
             )
         }
+        
         
         
         

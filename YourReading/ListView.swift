@@ -26,6 +26,12 @@ struct ListView: View {
                     }
                 }
                 
+//                Section(header: Text("")){
+//                    NavigationLink(destination: ListDetailAddView()) {
+//                            Text("123")
+//                        }
+//                }
+                
             }
             .navigationBarTitle(
                 Text("我的書單"),
